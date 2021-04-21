@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body{
+    background-color: #68ebe6;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -34,7 +38,41 @@ header{
 }
 
 main{
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border:2px solid rgb(19, 7, 7);
     flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-main{
+    width: 65%;
+    border: 1px solid rgba(131, 62, 16, 0.692);
+}
+
+.section-main__title{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sidebar{
+    width: 25%;
+    background-color: #68ebe6;
+    border: 1px solid rgba(131, 62, 16, 0.692);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.sidebar__widget{
+    background-color: rgb(8, 160, 233);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
