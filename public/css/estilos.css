@@ -32,3 +32,14 @@ header{
     padding-bottom: 5px;
     border-bottom: 1px solid #fff;
 }
+
+main{
+    flex-grow: 1;
+}
+
+footer{
+    background-color: #141414;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
