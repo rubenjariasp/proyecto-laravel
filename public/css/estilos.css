@@ -151,6 +151,12 @@ footer{
     padding: 5px;
     background-color: #0fd330;
     color: #fff;
+    margin-right: 20px;
+}
+
+.button-container__button--succes:hover{
+    cursor: pointer;
+    background-color: rgb(10, 133, 20);
 }
 
 

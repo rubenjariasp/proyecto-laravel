@@ -23,9 +23,7 @@
 
                 <h2 class="section-main__title">@yield('section-main__title')</h2>
                 <div class="button-container">
-                    <div class="button-container__group">
-                        <input class="button-container__button--succes" type="submit" value="Agregar">
-                </div>
+                    @yield('boton-add')
                 </div>
                 @yield('content-section-main')
             </section>
