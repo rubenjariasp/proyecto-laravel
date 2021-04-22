@@ -14,7 +14,7 @@ class InputController extends Controller
      */
     public function index()
     {
-        return view('inputs.index');
+        //
     }
 
     /**
@@ -24,7 +24,7 @@ class InputController extends Controller
      */
     public function create()
     {
-        return view('inputs.create');
+        //
     }
 
     /**
