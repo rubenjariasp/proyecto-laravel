@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('inputs.create');
-});
+Route::get('/','InputController@index')->name('inputs.index');
+Route::get('/inputs/create','InputController@create')->name('inputs.create');
