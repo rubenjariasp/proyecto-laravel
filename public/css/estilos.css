@@ -48,6 +48,7 @@ main{
 }
 
 .section-main{
+    padding: 20px;
     width: 65%;
     border: 1px solid rgba(131, 62, 16, 0.692);
 }
@@ -81,3 +82,76 @@ footer{
     padding: 20px;
     text-align: center;
 }
+
+/*Estilos al contenido del seccion de entradas*/
+.section-main__articles{
+    padding: 20px;
+    border: 1px solid rgba(131, 62, 16, 0.692);
+    margin-top: 20px;
+}
+
+.section-main__tile-article{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-main__description{
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.more-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.more-info__cite{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.more-info__span{
+    font-weight: bold;
+}
+
+.button-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.button-container__group{
+    margin-left: 5px;
+}
+
+.button-container__button--info{
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.button-container__button--info:hover{
+    cursor: pointer;
+    background-color: #002fff;
+}
+
+.button-container__button--danger{
+    padding: 5px;
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.button-container__button--danger:hover{
+    cursor: pointer;
+    background-color: #e71912;
+}
+
+.button-container__button--succes{
+    padding: 5px;
+    background-color: #0fd330;
+    color: #fff;
+}
+
+
+

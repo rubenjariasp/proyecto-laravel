@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container">
+
         <header>
             <nav class="nav-bar">
                 <a href="#" class="nav-bar__link">Deporte</a>
@@ -19,7 +20,14 @@
 
         <main>
             <section class="section-main">
-                <h2 class="section-main__title">Titulo de la seccion</h2>
+
+                <h2 class="section-main__title">@yield('section-main__title')</h2>
+                <div class="button-container">
+                    <div class="button-container__group">
+                        <input class="button-container__button--succes" type="submit" value="Agregar">
+                </div>
+                </div>
+                @yield('content-section-main')
             </section>
 
             <aside class="sidebar">
