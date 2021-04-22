@@ -1,64 +1,64 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #68ebe6;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-header{
+header {
     background-color: #141414;
     padding: 20px;
 }
 
-.nav-bar{
+.nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.nav-bar__link{
+.nav-bar__link {
     color: #fff;
     text-decoration: none;
     padding-bottom: 5px;
-    border-bottom: 1px solid  transparent;
+    border-bottom: 1px solid transparent;
 }
 
-.nav-bar__link:hover{
+.nav-bar__link:hover {
     padding-bottom: 5px;
     border-bottom: 1px solid #fff;
 }
 
-main{
+main {
     background-color: #fff;
     margin: 20px;
     padding: 20px;
-    border:2px solid rgb(19, 7, 7);
+    border: 2px solid rgb(19, 7, 7);
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
 }
 
-.section-main{
+.section-main {
     padding: 20px;
     width: 65%;
     border: 1px solid rgba(131, 62, 16, 0.692);
 }
 
-.section-main__title{
+.section-main__title {
     text-align: center;
     margin: 20px 0;
 }
 
-.sidebar{
+.sidebar {
     width: 25%;
     background-color: #68ebe6;
     border: 1px solid rgba(131, 62, 16, 0.692);
@@ -68,7 +68,7 @@ main{
     padding: 20px;
 }
 
-.sidebar__widget{
+.sidebar__widget {
     background-color: rgb(8, 160, 233);
     height: 100px;
     display: flex;
@@ -76,7 +76,7 @@ main{
     align-items: center;
 }
 
-footer{
+footer {
     background-color: #141414;
     color: #fff;
     padding: 20px;
@@ -84,80 +84,105 @@ footer{
 }
 
 /*Estilos al contenido del seccion de entradas*/
-.section-main__articles{
+.section-main__articles {
     padding: 20px;
     border: 1px solid rgba(131, 62, 16, 0.692);
     margin-top: 20px;
 }
 
-.section-main__tile-article{
+.section-main__tile-article {
     text-align: center;
     margin-bottom: 10px;
 }
 
-.section-main__description{
+.section-main__description {
     text-align: justify;
     line-height: 1.5;
     margin-bottom: 10px;
 }
 
-.more-info{
+.more-info {
     display: flex;
     flex-wrap: wrap;
 }
 
-.more-info__cite{
+.more-info__cite {
     width: 100%;
     margin-bottom: 5px;
 }
 
-.more-info__span{
+.more-info__span {
     font-weight: bold;
 }
 
-.button-container{
+.button-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
 
-.button-container__group{
+.button-container__group {
     margin-left: 5px;
 }
 
-.button-container__button--info{
+.button-container__button--info {
     padding: 5px;
     background-color: #007bff;
     color: #fff;
 }
 
-.button-container__button--info:hover{
+.button-container__button--info:hover {
     cursor: pointer;
     background-color: #002fff;
 }
 
-.button-container__button--danger{
+.button-container__button--danger {
     padding: 5px;
     background-color: #d9534f;
     color: #fff;
 }
 
-.button-container__button--danger:hover{
+.button-container__button--danger:hover {
     cursor: pointer;
     background-color: #e71912;
 }
 
-.button-container__button--succes{
+.button-container__button--succes {
     padding: 5px;
     background-color: #0fd330;
     color: #fff;
     margin-right: 20px;
 }
 
-.button-container__button--succes:hover{
+.button-container__button--succes:hover {
     cursor: pointer;
     background-color: rgb(10, 133, 20);
 }
 
+/*Estilos a la view de crear entradas*/
+.form-inputs{
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 20px;
+}
 
+.input-container{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.input-container__input{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.input-container__text{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 150px;
+    margin-top: 5px;
+
+}
 
