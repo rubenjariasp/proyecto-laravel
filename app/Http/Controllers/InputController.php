@@ -43,7 +43,15 @@ class InputController extends Controller
      */
     public function store(Request $request)
     {
+        $data= $request;
 
+        Input::create([
+            'category_id'=> $data['category_id'],
+            'title'=> $data['title'],
+            'description'=> $data['description']
+        ]);
+
+        return redirect()->action('InputController@index');
     }
 
     /**
