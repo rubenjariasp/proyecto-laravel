@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','InputController@index')->name('inputs.index');
 Route::get('/inputs/create','InputController@create')->name('inputs.create');
+Route::post('/','InputController@store')->name('inputs.store');

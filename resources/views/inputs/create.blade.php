@@ -10,7 +10,8 @@
         <a href="{{route('inputs.index')}}" class="button-container__button--info">Volver</a>
     @endsection
     <div class="form-group">
-        <form class="form-inputs" action="" method="POST">
+        <form class="form-inputs" action="{{route('inputs.store')}}" method="POST">
+            @csrf
             <div class="input-container">
                 <label class="input-container__label" for="title"> Titulo</label>
                 <input id="title" name="title" class="input-container__input" type="text" placeholder="Titulo">
@@ -23,7 +24,7 @@
 
             <div class="input-container">
                 <label class="input-container__label" for="category"> Categoria</label>
-                <select class="input-container__select" name="" id="category">
+                <select class="input-container__select" name="category" id="category">
                     <option value="" selected>Selecione una categoria</option>
                     <option value="">deporte</option>
                     <option value="">Drama</option>

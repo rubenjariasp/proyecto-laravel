@@ -11,14 +11,14 @@ Gestionar entradas.
 @endsection
 
 @section('content-section-main')
-<article class="section-main__articles">
-    <h3 class="section-main__tile-article">Titulo del Articulo</h3>
+@foreach ($entradas as $entrada)
+   <article class="section-main__articles">
+    <h3 class="section-main__tile-article">{{$entrada->title}}</h3>
 
-    <p class="section-main__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, aperiam voluptatum. Porro incidunt provident ratione ad. Repellendus molestias quia quis beatae facere ducimus maiores numquam, corrupti, officia quae ratione consequuntur!</p>
+    <p class="section-main__description">{{$entrada->description}}</p>
 
     <div class="more-info">
-        <cite class="more-info__cite"><span class="more-info__span">Autor:</span>  Fulanito de tal.</cite>
-        <cite class="more-info__cite"><span class="more-info__span">Categoria:</span>  Fulanito de tal.</cite>
+        <cite class="more-info__cite"><span class="more-info__span">Categoria:</span>{{$entrada->category->name}}.</cite>
     </div>
 
     <div class="button-container">
@@ -29,45 +29,10 @@ Gestionar entradas.
             <input class="button-container__button--danger" type="submit" value="Eliminar">
         </div>
     </div>
-</article>
+</article> 
+@endforeach
 
-<article class="section-main__articles">
-    <h3 class="section-main__tile-article">Titulo del Articulo</h3>
 
-    <p class="section-main__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, aperiam voluptatum. Porro incidunt provident ratione ad. Repellendus molestias quia quis beatae facere ducimus maiores numquam, corrupti, officia quae ratione consequuntur!</p>
-
-    <div class="more-info">
-        <cite class="more-info__cite"><span class="more-info__span">Autor:</span>  Fulanito de tal.</cite>
-        <cite class="more-info__cite"><span class="more-info__span">Categoria:</span>  Fulanito de tal.</cite>
-    </div>
-
-    <div class="button-container">
-        <div class="button-container__group button-container__group">
-            <input class="button-container__button--info" type="submit" value="Modificar">
-        </div>
-        <div class="button-container__group">
-            <input class="button-container__button--danger" type="submit" value="Eliminar">
-        </div>
-    </div>
-</article>
-
-<article class="section-main__articles">
-    <h3 class="section-main__tile-article">Titulo del Articulo</h3>
-
-    <p class="section-main__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, aperiam voluptatum. Porro incidunt provident ratione ad. Repellendus molestias quia quis beatae facere ducimus maiores numquam, corrupti, officia quae ratione consequuntur!</p>
-
-    <div class="more-info">
-        <cite class="more-info__cite"><span class="more-info__span">Autor:</span>  Fulanito de tal.</cite>
-        <cite class="more-info__cite"><span class="more-info__span">Categoria:</span>  Fulanito de tal.</cite>
-    </div>
-
-    <div class="button-container">
-        <div class="button-container__group">
-            <input class="button-container__button--info" type="submit" value="Modificar">
-        </div>
-        <div class="button-container__group">
-            <input class="button-container__button--danger" type="submit" value="Eliminar">
-        </div>
-    </div>
-</article>
 @endsection
+
+

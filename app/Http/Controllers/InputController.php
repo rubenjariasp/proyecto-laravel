@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Input;
 use Illuminate\Http\Request;
 
@@ -13,8 +14,11 @@ class InputController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('inputs.index');
+    {   $categorias = Category::all(['id','name']);
+        $entradas= Input::all(['id', 'category_id', 'title', 'description']);
+        return view('inputs.index')
+                ->with('entradas', $entradas)
+                ->with('categorias', $categorias);
     }
 
     /**
@@ -35,7 +39,7 @@ class InputController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
