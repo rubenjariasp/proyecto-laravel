@@ -15,7 +15,9 @@ class CreateInputsTable extends Migration
     {
         Schema::create('inputs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('category_id')->references('id')->on('categories')->onDelete('cascade');
+            $table->foreignId('category_id')->references('id')->on('categories')->onDelete('cascade')->onUpdate('cascade');
+            $table->string('title');
+            $table->text('description');
             $table->timestamps();
         });
     }
