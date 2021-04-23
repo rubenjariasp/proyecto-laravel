@@ -26,9 +26,9 @@
                 <label class="input-container__label" for="category"> Categoria</label>
                 <select class="input-container__select" name="category" id="category">
                     <option value="" selected>Selecione una categoria</option>
-                    <option value="">deporte</option>
-                    <option value="">Drama</option>
-                    <option value="">suspenso</option>
+                    @foreach ($categorias as $categoria)
+                        <option value="{{$categoria->id}}">{{$categoria->name}}</option>
+                    @endforeach
                 </select>
             </div>
 
@@ -40,3 +40,5 @@
     </form>
 </div>
 @endsection
+
+

@@ -15,6 +15,7 @@ class InputController extends Controller
      */
     public function index()
     {   $categorias = Category::all(['id','name']);
+        
         $entradas= Input::all(['id', 'category_id', 'title', 'description']);
         return view('inputs.index')
                 ->with('entradas', $entradas)
@@ -28,7 +29,10 @@ class InputController extends Controller
      */
     public function create()
     {
-        return view('inputs.create');
+        $categorias = Category::all(['id','name']);
+
+        return view('inputs.create')
+                ->with('categorias', $categorias);
     }
 
     /**
@@ -39,7 +43,7 @@ class InputController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+
     }
 
     /**
